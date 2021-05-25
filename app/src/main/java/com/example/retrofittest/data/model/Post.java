@@ -7,26 +7,23 @@ import java.util.Date;
 public class Post {
     private int id;
     private String name;
-    private Date dob;
-    private int age;
+    private String dob;
+    private int accid;
     private String email;
     private String address;
     private String phone;
     private String position;
     private Double salary;
-    private int accountID;
 
-    public Post(int id, String name, Date dob, int age, String email, String address, String phone, String position, Double salary, int accountID) {
-        this.id = id;
+    public Post(String name, String dob, int accid, String email, String address, String phone, String position, Double salary) {
         this.name = name;
         this.dob = dob;
-        this.age = age;
+        this.accid = accid;
         this.email = email;
         this.address = address;
         this.phone = phone;
         this.position = position;
         this.salary = salary;
-        this.accountID = accountID;
     }
 
     public int getId() {
@@ -45,20 +42,20 @@ public class Post {
         this.name = name;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
-    public int getAge() {
-        return age;
+    public int getAccid() {
+        return accid;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAccid(int accid) {
+        this.accid = accid;
     }
 
     public String getEmail() {
@@ -99,13 +96,5 @@ public class Post {
 
     public void setSalary(Double salary) {
         this.salary = salary;
-    }
-
-    public int getAccountID() {
-        return accountID;
-    }
-
-    public void setAccountID(int accountID) {
-        accountID = accountID;
     }
 }

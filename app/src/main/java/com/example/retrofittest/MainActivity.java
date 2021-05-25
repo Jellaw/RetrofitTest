@@ -65,10 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     String content = "";
                     content += "ID: " + post.getId() + "\n";
                     content += "name: " + post.getName() + "\n";
-                    content += "Age: " + post.getAge() + "\n";
-                    content += "accID: " + post.getAccountID() +  "\n";
+                    content += "Acc ID: " + post.getAccid() + "\n";
                     for (Acc acc : accs) {
-                        if (post.getAccountID()==acc.getId()){
+                        if (post.getAccid()==acc.getId()){
                             content += "username: " + acc.getUsername() + "\n";
                             content += "password: " + acc.getPassword() + "\n\n";
                         }
